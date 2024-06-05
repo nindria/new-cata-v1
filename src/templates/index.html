@@ -10,20 +10,20 @@
   <link rel="manifest" href="./app.webmanifest">
   <link rel="icon" href="./favicon.png">
   <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
-  <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"> 
   <title>Chasper Restaurant</title>
   
 </head>
 
 <body>
   <header class="app-bar">
-    <a href="#wrapper" class="skip-to-content">Direct main menu</a>
+    <a href="#mainContent" class="skip-to-content">Direct main menu</a>
     
     <div class="app-bar__menu">
       <button id="hamburgerButton">☰</button>
     </div>
     <div class="app-bar__brand">
-      <h1>CHASPER Restaurant</h1>
+      <h1>CASPER Restaurant</h1>
     </div>
     <nav id="navigationDrawer" class="app-bar__navigation">
       <ul>
@@ -34,14 +34,14 @@
     </nav>
   </header>
 
-  <main id="mainContent">
+  <main id="mainContent" tabindex="0">
 
     <!-- hero jumbotron-->
     <div class="hero">
       <img src="./images/heros/hero-image_3.jpg" width="450" alt="rest image" class="jumbo-image" />
       <h1>Welcome to ChasperRest</h1>
       <p>Find your favorite restaurant<br></p>
-      <a href="#wrapper" class="btn"><Strong>HERE</Strong></a>
+      <a href="#mainContent" class="btn"><Strong>HERE</Strong></a>
     </div>
     <!-- hero jumbotron -->
   </main>
