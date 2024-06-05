@@ -14,6 +14,8 @@ const createRestaurantDetailTemplate = (restaurant) => {
       <p>${restaurant.city}</p>
       <h4>Rating</h4>
       <p>${restaurant.rating}</p>
+      <h4>Description</h4>
+      <p>${restaurant.description}</p>
       <h4>Categories</h4>
       <p>${categories}</p>
     </div>
@@ -54,7 +56,7 @@ const createRestaurantItemTemplate = (restaurant) => `
   <div class="restaurant-item">
     <div class="restaurant-item__header">
       <img class="restaurant-item__header__image" alt="${restaurant.name}"
-           src="${restaurant.pictureId ? CONFIG.BASE_IMAGE_URL + restaurant.pictureId : 'https://via.placeholder.com/800x450?text=No+Image'}">
+           src="${restaurant.pictureId ? CONFIG.BASE_IMAGE_URL + restaurant.pictureId : 'https://via.placeholder.com/800x450?text=No+Image'}" crossorigin="anonymous">
       <div class="restaurant-item__header__rating">
         <p>⭐️<span class="restaurant-item__header__rating__score">${restaurant.rating}</span></p>
       </div>
