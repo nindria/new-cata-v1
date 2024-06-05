@@ -27,18 +27,42 @@ body {
   z-index: 99;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
+
+.skip-to-content {
+  position: absolute;
+  top: -40px; /* sesuaikan dengan ukuran yang diperlukan */
+  left: 0px; /* sesuaikan dengan posisi yang diinginkan */
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 9999; /* pastikan lebih tinggi dari elemen lain */
+  opacity: 0; /* sembunyikan secara default */
+}
+
+.skip-to-content:focus,
+.skip-to-content:hover {
+  opacity: 1; /* tampilkan ketika dihover atau difokus */
+  top: 0;
+}
+
+
  
 .app-bar .app-bar__menu {
   display: flex;
   align-items: center;
+  
 }
  
 .app-bar .app-bar__menu button {
   background-color: transparent;
+  color: white;
   border: none;
   font-size: 18px;
   padding: 8px;
   cursor: pointer;
+  min-width: 44px;
+  min-height: 44px;
 }
  
 .app-bar .app-bar__brand {
@@ -76,6 +100,8 @@ body {
   margin-bottom: 5px;
   width: 100%;
   font-size: 20px;
+  min-width: 44px;
+  min-height: 44px;
 }
  
 /*
@@ -223,6 +249,8 @@ main {
 .restaurant-item .restaurant-item__content h3 a {
   color: #1d1280;
   text-decoration: none;
+  min-width: 44px;
+  min-height: 44px;
 }
  
 .restaurant-item .restaurant-item__content p {
