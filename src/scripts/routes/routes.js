@@ -4,7 +4,7 @@ import Detail from '../page/detail';
 
 const routes = {
   '/': Home, // default
-  '/favorite': Fav,
+  '/fav': Fav,
   '/detail/:id': Detail,
 
 };
